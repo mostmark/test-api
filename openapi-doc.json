@@ -3,5 +3,26 @@
     "info": {
         "title": "Test1",
         "description": "A simple test"
+    },
+    "paths": {
+        "/test1": {
+            "get": {
+                "description": "Get all the test results",
+                "responses": {
+                    "200": {
+                        "description": "A successful request",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "description": "Adds a test result"
+            },
+            "delete": {
+                "description": "Deletes a test result"
+            }
+        }
     }
 }
